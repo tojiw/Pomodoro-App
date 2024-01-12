@@ -1,0 +1,72 @@
+.tbContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  position:relative;
+  bottom: 524px;
+  margin-bottom: 30px;
+}
+.Pomodoro {
+  font-size: 15px;
+  border: none;
+  background-color: white;
+  border-radius: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition-duration: 0.3s;
+  transition-property: color;
+  cursor: pointer;
+}
+
+.Pomodoro:hover {
+  color: white;
+  background: black;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+}
+.LB {
+  font-size: 15px;
+  border: none;
+  background-color: white;
+  border-radius: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition-duration: 0.3s;
+  transition-property: color;
+  cursor: pointer;
+}
+
+.LB:hover {
+  color: white;
+  background: black;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+}
+
+.SB {
+  font-size: 15px;
+  border: none;
+  background-color: white;
+  border-radius: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition-duration: 0.3s;
+  transition-property: color;
+  cursor: pointer;
+}
+.SB:hover {
+  color: white;
+  background: black;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+}

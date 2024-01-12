@@ -1,0 +1,13 @@
+*{ border: 1px solid red; }
+.spotify{
+    border-style: none;
+    width: 25%;
+    height:152px ;
+}
+.SpotifyC{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    top:-250px;
+}

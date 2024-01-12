@@ -1,0 +1,11 @@
+.fsc{
+    /* cursor: pointer; */
+    width: min-content;
+    position:relative;
+    top: -150px;
+}
+.fs{
+    color: white;
+    background-color: white;
+    cursor: pointer;
+}
