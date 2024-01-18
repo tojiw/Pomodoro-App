@@ -2,7 +2,6 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import resetIcon from "../components/Images/reset.png";
 import TopButtons from "../components/TopButtons";
-import Fullscreen from "../components/Fullscreen";
 import SpotifyPomodoro from "../components/SpotifyPomodoro";
 function App() {
   const [isActive, setIsActive] = useState(false);
@@ -32,34 +31,40 @@ function App() {
   };
   return (
     <>
-      <div className="container">
-        <div className="timer">
-          <p>{formatTime(seconds)}</p>
-        </div>
-        <div className="ButtonContainer">
-          <div className="Buttons">
-            <button
-              className="start"
-              onClick={function Start() {
-                setIsActive(true);
-              }}
-            >
-              Play
-            </button>
-            <img
-              src={resetIcon}
-              className="stop"
-              onClick={() => {
-                setIsActive(false);
-                setSeconds(1500);
-              }}
-            />
-          </div>
+      <div className="timer">
+        <p>{formatTime(seconds)}</p>
+      </div>
+      <div className="ButtonContainer">
+        <div className="Buttons">
+          <button
+            className="Power"
+            onClick={function Start() {
+              setIsActive(true);
+            }}
+          >
+            Play
+          </button>
+
+          <button
+            className="Power"
+            onClick={function stop() {
+              setIsActive(false);
+            }}
+          >
+            Stop
+          </button>
+          <img
+            src={resetIcon}
+            className="reset"
+            onClick={() => {
+              setIsActive(false);
+              setSeconds(1500);
+            }}
+          />
         </div>
       </div>
-      <TopButtons setBreak={setSeconds} setLongBreak={setSeconds}></TopButtons>
-      <Fullscreen></Fullscreen>
-      <SpotifyPomodoro></SpotifyPomodoro>
+      <TopButtons setBreak={setSeconds} setLongBreak={setSeconds} setPomodoro={setSeconds}></TopButtons>
+      <SpotifyPomodoro/>
     </>
   );
 }

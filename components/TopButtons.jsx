@@ -1,11 +1,7 @@
 import "./TopButtons.css";
-import Popup from "./Popup";
-import { useState } from "react";
-const TopButtons = ({ setBreak, setLongBreak }) => {
-  const [popUp, setPopUp] = useState(false);
-
+const TopButtons = ({ setBreak, setLongBreak, setPomodoro }) => {
   function PomodoroClick() {
-    setPopUp(true);
+    setPomodoro(1500);
   }
 
   function handleShortClick() {
@@ -16,23 +12,18 @@ const TopButtons = ({ setBreak, setLongBreak }) => {
     setLongBreak(600);
   }
 
-  // function closePopup() {
-  //   setPopUp(false);
-  // }
   return (
-    
-      <div className="tbContainer">
-        <button className="Pomodoro" onClick={PomodoroClick}>
-          Pomodoro
-        </button>
-        <button className="SB" onClick={handleShortClick}>
-          Short Break
-        </button>
-        <button className="LB" onClick={handleLongClick}>
-          Long Break
-        </button>
-      </div>
-    
+    <div className="tbContainer">
+      <button className="Pomodoro" onClick={PomodoroClick}>
+        Pomodoro
+      </button>
+      <button className="SB" onClick={handleShortClick}>
+        Short Break
+      </button>
+      <button className="LB" onClick={handleLongClick}>
+        Long Break
+      </button>
+    </div>
   );
 };
 

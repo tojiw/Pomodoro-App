@@ -3,70 +3,55 @@
   align-items: center;
   justify-content: center;
   gap: 15px;
-  position:relative;
-  bottom: 524px;
-  margin-bottom: 30px;
+  position: relative;
+  bottom: 500px;
 }
+
 .Pomodoro {
-  font-size: 15px;
-  border: none;
-  background-color: white;
-  border-radius: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  transition-duration: 0.3s;
-  transition-property: color;
   cursor: pointer;
+  font-size: 15px;
+  border-radius: 20px;
+  background: black;
+  color: white;
+  padding: 10px 25px;
+  border: 1px solid white;
+  transition: background-color 0.2s;
 }
 
 .Pomodoro:hover {
-  color: white;
-  background: black;
-  border-width: 2px;
-  border-color: white;
-  border-style: solid;
-}
-.LB {
-  font-size: 15px;
-  border: none;
   background-color: white;
-  border-radius: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  transition-duration: 0.3s;
-  transition-property: color;
-  cursor: pointer;
-}
-
-.LB:hover {
-  color: white;
-  background: black;
-  border-width: 2px;
-  border-color: white;
-  border-style: solid;
+  color: black;
+  border-color: 1px solid transparent;
 }
 
 .SB {
-  font-size: 15px;
-  border: none;
-  background-color: white;
-  border-radius: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  transition-duration: 0.3s;
-  transition-property: color;
   cursor: pointer;
+  font-size: 15px;
+  border-radius: 20px;
+  background: black;
+  color: white;
+  padding: 10px 25px;
+  border: 1px solid white;
+  transition: background-color 0.2s;
 }
 .SB:hover {
-  color: white;
+  background-color: white;
+  color: black;
+  border-color: 1px solid transparent;
+}
+.LB {
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 20px;
   background: black;
-  border-width: 2px;
-  border-color: white;
-  border-style: solid;
+  color: white;
+  padding: 10px 25px;
+  border: 1px solid white;
+  transition: background-color 0.2s;
+}
+
+.LB:hover {
+  background-color: white;
+  color: black;
+  border-color: 1px solid transparent;
 }

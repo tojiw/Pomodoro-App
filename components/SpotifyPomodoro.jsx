@@ -1,11 +1,11 @@
-import "./Spotify.css"
+import "./Spotify.css";
 const SpotifyPomodoro = () => {
   return (
     <div className="SpotifyC">
       <iframe
-      className="spotify"
-        src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn?utm_source=generator"
-        height="152px"
+        src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn?utm_source=generator&theme=0"
+        
+        className="spotify"
         allowfullscreen=""
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
