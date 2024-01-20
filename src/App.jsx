@@ -1,11 +1,17 @@
 import "./App.css";
 import { useEffect, useState } from "react";
-import resetIcon from "../components/Images/reset.png";
 import TopButtons from "../components/TopButtons";
 import SpotifyPomodoro from "../components/SpotifyPomodoro";
+import Footer from "../components/Footer";
+import Refresh from "../components/Refresh";
+import Header from "../components/Header";
 function App() {
   const [isActive, setIsActive] = useState(false);
   const [seconds, setSeconds] = useState(1500);
+
+  const handleRefreshLogic = (setDuration) => {
+    setSeconds(setDuration);
+  };
 
   useEffect(() => {
     let interval;
@@ -31,6 +37,7 @@ function App() {
   };
   return (
     <>
+      <Header />
       <div className="timer">
         <p>{formatTime(seconds)}</p>
       </div>
@@ -53,18 +60,16 @@ function App() {
           >
             Stop
           </button>
-          <img
-            src={resetIcon}
-            className="reset"
-            onClick={() => {
-              setIsActive(false);
-              setSeconds(1500);
-            }}
-          />
+          <Refresh onRefresh={handleRefreshLogic}></Refresh>
         </div>
       </div>
-      <TopButtons setBreak={setSeconds} setLongBreak={setSeconds} setPomodoro={setSeconds}></TopButtons>
-      <SpotifyPomodoro/>
+      <TopButtons
+        setBreak={setSeconds}
+        setLongBreak={setSeconds}
+        setPomodoro={setSeconds}
+      ></TopButtons>
+      <SpotifyPomodoro />
+      <Footer />
     </>
   );
 }

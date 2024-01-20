@@ -1,0 +1,14 @@
+.refresh-button {
+    font-size: 40px; /* Adjust the size as needed */
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.8s ease-in-out;
+    color: white;
+  }
+  
+  .refresh-button.spin {
+    transform: rotate(360deg);
+  }
+  
