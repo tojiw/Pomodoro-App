@@ -39,7 +39,7 @@ body {
   border: 1px solid transparent;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 420px) {
   .timer {
     position: relative;
     top: 0;

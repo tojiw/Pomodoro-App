@@ -56,7 +56,7 @@
   border-color: 1px solid transparent;
 }
 
-@media (max-width:320px){
+@media (max-width:420px){
   .tbContainer{
     bottom: 320px;
   }

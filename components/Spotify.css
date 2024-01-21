@@ -8,12 +8,16 @@
     margin-left: 20px;
 }
 
-@media (max-width:320px)
+@media (max-width:420px)
 {
     .SpotifyC{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
         bottom: 100px;
-        right: 25px;
-        margin-right: 20px;
+        /* right: 25px;
+        left: 15px; */
     }
     .spotify{
         height: 170px;

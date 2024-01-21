@@ -18,7 +18,7 @@ a {
   color: inherit;
 }
 
-@media (max-width:320px)
+@media (max-width:420px)
 {
   .header{
     font-size: 12px;
