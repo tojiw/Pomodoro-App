@@ -7,3 +7,15 @@
     bottom: 180px;
     margin-left: 20px;
 }
+
+@media (max-width:320px)
+{
+    .SpotifyC{
+        bottom: 100px;
+        right: 25px;
+        margin-right: 20px;
+    }
+    .spotify{
+        height: 170px;
+    }
+}

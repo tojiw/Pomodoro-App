@@ -3,3 +3,13 @@
     justify-content: center;
     color: white;
 }
+
+
+@media (max-width: 320px) {
+    .footer {
+        margin-left: 5px;
+        font-size: 12px;
+    }
+  
+  }
+  

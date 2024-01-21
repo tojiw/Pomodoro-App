@@ -1,17 +1,26 @@
-.header{
-display: flex;
-    justify-content: center;
-    color: white;
+.header {
+  display: flex;
+  justify-content: center;
+  color: white;
+  width: 100%;
+  
 }
 
-img{
-    width: 20px;
-    margin-right: 5px;
+img {
+  width: 20px;
+  margin-right: 5px;
 }
-span{
-    margin-left: 5px;
+span {
+  margin-left: 5px;
 }
-a{
-    /* text-decoration: none; */
-    color: inherit;
+a {
+  /* text-decoration: none; */
+  color: inherit;
+}
+
+@media (max-width:320px)
+{
+  .header{
+    font-size: 12px;
+  }
 }

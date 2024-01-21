@@ -10,8 +10,6 @@ body {
   align-items: center;
   font-weight: 500;
   font-size: 190px;
-  /* border-style: dotted;
-  border-color: red; */
 }
 
 .Buttons {
@@ -38,5 +36,24 @@ body {
 .Power:hover {
   background-color: white;
   color: black;
-  border:1px solid transparent;
+  border: 1px solid transparent;
+}
+
+@media (max-width: 320px) {
+  .timer {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 100px;
+  }
+  .Buttons{
+    bottom: 100px;
+  }
+
+  .Power{
+    padding: 10px 25px;
+    font-size: 11px;
+
+  }
+
 }

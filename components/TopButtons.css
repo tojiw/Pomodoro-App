@@ -55,3 +55,23 @@
   color: black;
   border-color: 1px solid transparent;
 }
+
+@media (max-width:320px){
+  .tbContainer{
+    bottom: 320px;
+  }
+  .Pomodoro{
+    font-size: 11px;
+    padding: 10px 15px;
+  }
+  .LB{
+    font-size: 11px;
+    padding: 10px 15px;
+
+  }
+  .SB{
+    font-size: 11px;
+    padding: 10px 15px;
+
+  }
+}
